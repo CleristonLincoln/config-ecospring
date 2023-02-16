@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: apolo
+  cloud:
+    config:
+      server:
+        git:
+          #          uri: file:///${user.home}\workspace\gerese\back-migroservice\config-repo
+          uri: https://github.com/CleristonLincoln/config-ecospring
+          default-label: main
+          search-paths:
+            - biblioteca
+
